@@ -109,7 +109,7 @@ cnView <- function(x, y=NULL, z=NULL, genome='hg19', chr='chr1',
     if(chr == 'all')
     {
         # plot the graphic
-        p1 <- cnView_buildMain(x, z=z, dummyData, chr=chr)
+        p1 <- cnView_buildMain(x, z=z, dummyData, chr=chr, CNscale = CNscale)
     } else {
         # plot chromosome
         chromosome_plot <- ideoView(cytobands, chromosome=chr,
